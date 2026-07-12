@@ -1,7 +1,7 @@
 # portafolio
   creamos nuestro portafolio con ReactJS
   publicado en la siguiente dirección
-  https://vicovillca.github.io/portafolio/
+  https://github.com/Viqui-Alaro/Portafolio
 # subir a git Pages
   npm run deploy
   despues de ejecutar la linea de comandos ya iniciamos el proyecto
