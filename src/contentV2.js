@@ -14,8 +14,8 @@ export const translations = {
     },
     about: {
       title: "01. Acerca de mí",
-      p1: "Me considero una persona curiosa y cooperativa. Me encanta aportar mis conocimientos para crear soluciones innovadoras que resuelvan problemas reales y agreguen valor.",
-      p2: "A lo largo de mi carrera, he tenido la oportunidad de trabajar con diversas tecnologías modernas:",
+      p1: "Me define la curiosidad técnica y la constante búsqueda de innovación. Disfruto colaborar en equipos multidisciplinarios, aportar una visión arquitectónica sólida y transformar ideas complejas en productos digitales de alto valor.",
+      p2: "Mi experiencia abarca el desarrollo de software y la integración de tecnologías modernas:",
       cv: "Curriculum",
       spin: "Frontend * Backend * Software * Engineer * ",
     },
@@ -97,12 +97,21 @@ export const certifications = [
 
 export const projects = [
   {
-    title: "ObiAdmin",
+    title: "SIAT en tus Manos",
     descripcion:
-      "Sistema integral de gestión educativa para seguimiento de tutores, coordinadores y estudiantes. Arquitectura full-stack con autenticación JWT, despliegue en contenedores Docker y base de datos PostgreSQL.",
+      "Aplicación móvil integral diseñada para facilitar la gestión, control y emisión de facturación electrónica en Bolivia (ecosistema SIAT). La herramienta centraliza procesos tributarios complejos en una interfaz intuitiva, adaptándose a diversos perfiles de usuario y garantizando el acceso rápido a la información fiscal desde cualquier lugar.",
     img: require("./componentes/images/proyectos/obi.png"),
-    tags: ["React.js", "NodeJS", "ExpressJS", "Docker", "JWT", "PostgreSQL", "MUI", "Axios", "Vercel", "Heroku"],
-    demo: "https://obi-font-end.vercel.app/",
+    
+    img: require("./componentes/images/proyectos/siatUno.png"),
+    images: [
+      require("./componentes/images/proyectos/siatUno.png"),
+      process.env.PUBLIC_URL + "/videos/SIATMobile.mp4", // <-- VIDEO: Guardado en public/videos/demo-siat.mp4
+      require("./componentes/images/proyectos/siatUno.png"),
+      require("./componentes/images/proyectos/siatTres.png"),
+      require("./componentes/images/proyectos/siatCuatro.png") // Imagen 2
+    ],
+    tags: ["Kotlin", "Jetpack Compose", "Coroutines + Flow", "Clean Architecture", "JAVA"],
+    demo: "https://play.google.com/store/apps/details?id=bo.gob.sin.mobile.administraciontributaria",
     git: "https://github.com/VicoVillca/Obi-FontEnd",
   },
   {
@@ -112,28 +121,28 @@ export const projects = [
     img: require("./componentes/images/proyectos/portafolio.png"),
     tags: ["React.js", "GitHub Pages"],
     demo: "https://vicovillca.github.io/portafolio/",
-    git: "https://github.com/VicoVillca/portafolio",
+    git: "https://github.com/Viqui-Alaro/Portafolio",
   },
   {
-    title: "GoldPrice",
+    title: "Facturador Móvil - Farmacias",
     descripcion:
-      "Herramienta para calcular el precio del oro para la compra según la onza troy.",
+      "Siat Farmacias es la herramienta móvil definitiva diseñada específicamente para optimizar, digitalizar y agilizar el proceso de venta en farmacias, cumpliendo al 100% con las normativas de facturación electrónica en línea del SIAT (Servicio de Impuestos Nacionales).",
     img: require("./componentes/images/proyectos/goldprice.png"),
     tags: ["JavaScript", "HTML5", "CSS3"],
-    demo: "https://vicovillca.github.io/GoldPrice",
+    demo: "https://play.google.com/store/apps/details?id=bo.com.sin.mobile.administraciontributariafarmacia",
     git: "https://github.com/VicoVillca/Obi-FontEnd",
   },
   {
-    title: "BuscaMinas",
-    descripcion: "Juego clásico de buscaminas desarrollado con React.js.",
+    title: "Facturador Móvil - Transporte",
+    descripcion: "La solución ideal para la facturación electrónica en transporte. Permite emitir facturas de forma rápida y segura, cumpliendo con la normativa vigente. Los usuarios pueden registrar pasajeros, seleccionar rutas y calcular montos automáticamente. La app valida la información en tiempo real, evitando errores y garantizando precisión..",
     img: require("./componentes/images/proyectos/buscaminas.png"),
     tags: ["React.js"],
-    demo: "https://vicovillca.github.io/BuscaMinas/",
+    demo: "https://play.google.com/store/apps/details?id=bo.gob.sin.mobile.administraciontributariatransporte",
     git: "https://github.com/VicoVillca/BuscaMinas",
   },
   {
-    title: "Restricción vehicular",
-    descripcion: "Consulta de restricciones vehiculares de la alcaldía municipal de La Paz.",
+    title: "Fiabilidad-SIAT",
+    descripcion: "Aplicativo para la institución para la verificación de",
     img: require("./componentes/images/proyectos/restriccion.png"),
     tags: ["React.js"],
     demo: "https://vicovillca.github.io/restriccion-vehicular-lapaz/",
