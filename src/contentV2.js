@@ -106,7 +106,7 @@ export const projects = [
     images: [
       require("./componentes/images/proyectos/siatUno.png"),
       process.env.PUBLIC_URL + "/videos/SIATMobile.mp4", // <-- VIDEO: Guardado en public/videos/demo-siat.mp4
-      require("./componentes/images/proyectos/siatUno.png"),
+      require("./componentes/images/proyectos/siatDos.png"),
       require("./componentes/images/proyectos/siatTres.png"),
       require("./componentes/images/proyectos/siatCuatro.png") // Imagen 2
     ],
@@ -118,7 +118,7 @@ export const projects = [
     title: "Portafolio",
     descripcion:
       "Mi portafolio personal, desarrollado con React y publicado con GitHub Pages.",
-    img: require("./componentes/images/proyectos/portafolio.png"),
+    img: require("./componentes/images/proyectos/portafolioDos.png"),
     tags: ["React.js", "GitHub Pages"],
     demo: "https://vicovillca.github.io/portafolio/",
     git: "https://github.com/Viqui-Alaro/Portafolio",
@@ -127,7 +127,13 @@ export const projects = [
     title: "Facturador Móvil - Farmacias",
     descripcion:
       "Siat Farmacias es la herramienta móvil definitiva diseñada específicamente para optimizar, digitalizar y agilizar el proceso de venta en farmacias, cumpliendo al 100% con las normativas de facturación electrónica en línea del SIAT (Servicio de Impuestos Nacionales).",
-    img: require("./componentes/images/proyectos/goldprice.png"),
+    img: require("./componentes/images/proyectos/farmaciaUno.png"),
+    images: [
+      require("./componentes/images/proyectos/farmaciaUno.png"),
+      process.env.PUBLIC_URL + "/videos/FacturadorFarmacias.mp4", // <-- VIDEO: Guardado en public/videos/demo-siat.mp4
+      require("./componentes/images/proyectos/farmaciaDos.png"),
+      require("./componentes/images/proyectos/farmaciaTres.png") // Imagen 2
+    ],
     tags: ["JavaScript", "HTML5", "CSS3"],
     demo: "https://play.google.com/store/apps/details?id=bo.com.sin.mobile.administraciontributariafarmacia",
     git: "https://github.com/VicoVillca/Obi-FontEnd",
@@ -135,7 +141,14 @@ export const projects = [
   {
     title: "Facturador Móvil - Transporte",
     descripcion: "La solución ideal para la facturación electrónica en transporte. Permite emitir facturas de forma rápida y segura, cumpliendo con la normativa vigente. Los usuarios pueden registrar pasajeros, seleccionar rutas y calcular montos automáticamente. La app valida la información en tiempo real, evitando errores y garantizando precisión..",
-    img: require("./componentes/images/proyectos/buscaminas.png"),
+     img: require("./componentes/images/proyectos/transporteUno.png"),
+    images: [
+      require("./componentes/images/proyectos/transporteUno.png"),
+      process.env.PUBLIC_URL + "/videos/emision.mp4", // <-- VIDEO: Guardado en public/videos/demo-siat.mp4
+      require("./componentes/images/proyectos/transporteDos.png"),
+      process.env.PUBLIC_URL + "/videos/planilla_pasajeros.mp4" 
+      // Imagen 2
+    ],
     tags: ["React.js"],
     demo: "https://play.google.com/store/apps/details?id=bo.gob.sin.mobile.administraciontributariatransporte",
     git: "https://github.com/VicoVillca/BuscaMinas",
