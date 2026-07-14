@@ -104,8 +104,6 @@ export const projects = [
     title: "SIAT en tus Manos",
     descripcion:
       "Aplicación móvil integral diseñada para facilitar la gestión, control y emisión de facturación electrónica en Bolivia (ecosistema SIAT). La herramienta centraliza procesos tributarios complejos en una interfaz intuitiva, adaptándose a diversos perfiles de usuario y garantizando el acceso rápido a la información fiscal desde cualquier lugar.",
-    img: require("./componentes/images/proyectos/obi.png"),
-    
     img: require("./componentes/images/proyectos/siatUno.png"),
     images: [
       require("./componentes/images/proyectos/siatUno.png"),
