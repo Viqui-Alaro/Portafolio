@@ -23,6 +23,8 @@ export const translations = {
       title: "02. Mis proyectos",
       demo: "Demo",
       code: "Código",
+      google: "Google Play",
+      youtube: "Ver Video",
     },
   },
   en: {
@@ -45,6 +47,8 @@ export const translations = {
       title: "02. My projects",
       demo: "Demo",
       code: "Code",
+      google: "Google Play",
+      youtube: "Ver Video",
     },
   },
 };
@@ -111,8 +115,8 @@ export const projects = [
       require("./componentes/images/proyectos/siatCuatro.png") // Imagen 2
     ],
     tags: ["Kotlin", "Jetpack Compose", "Coroutines + Flow", "Clean Architecture", "JAVA"],
-    demo: "https://play.google.com/store/apps/details?id=bo.gob.sin.mobile.administraciontributaria",
-    git: "https://github.com/VicoVillca/Obi-FontEnd",
+    google: "https://play.google.com/store/apps/details?id=bo.gob.sin.mobile.administraciontributaria",
+    youtube: "https://www.youtube.com/watch?v=enPP66m77n4&t=1s",
   },
   {
     title: "Portafolio",
@@ -134,9 +138,8 @@ export const projects = [
       require("./componentes/images/proyectos/farmaciaDos.png"),
       require("./componentes/images/proyectos/farmaciaTres.png") // Imagen 2
     ],
-    tags: ["JavaScript", "HTML5", "CSS3"],
-    demo: "https://play.google.com/store/apps/details?id=bo.com.sin.mobile.administraciontributariafarmacia",
-    git: "https://github.com/VicoVillca/Obi-FontEnd",
+    tags: ["Kotlin", "Jetpack Compose", "Coroutines + Flow", "Clean Architecture", "JAVA"],
+    google: "https://play.google.com/store/apps/details?id=bo.com.sin.mobile.administraciontributariafarmacia"
   },
   {
     title: "Facturador Móvil - Transporte",
@@ -147,19 +150,23 @@ export const projects = [
       process.env.PUBLIC_URL + "/videos/emision.mp4", // <-- VIDEO: Guardado en public/videos/demo-siat.mp4
       require("./componentes/images/proyectos/transporteDos.png"),
       process.env.PUBLIC_URL + "/videos/planilla_pasajeros.mp4" 
-      // Imagen 2
+   
     ],
-    tags: ["React.js"],
-    demo: "https://play.google.com/store/apps/details?id=bo.gob.sin.mobile.administraciontributariatransporte",
-    git: "https://github.com/VicoVillca/BuscaMinas",
+     tags: ["Kotlin", "Jetpack Compose", "Coroutines + Flow", "Clean Architecture", "JAVA"],
+    google: "https://play.google.com/store/apps/details?id=bo.gob.sin.mobile.administraciontributariatransporte",
   },
   {
     title: "Fiabilidad-SIAT",
-    descripcion: "Aplicativo para la institución para la verificación de",
-    img: require("./componentes/images/proyectos/restriccion.png"),
-    tags: ["React.js"],
-    demo: "https://vicovillca.github.io/restriccion-vehicular-lapaz/",
-    git: "https://github.com/VicoVillca/restriccion-vehicular-lapaz",
+    descripcion: "Solución móvil de verificación en campo que optimiza los procesos de auditoría y fiscalización tributaria. La herramienta permite a los inspectores certificar la existencia física de los establecimientos, mapear coordenadas de domicilio mediante georreferenciación y auditar actividades económicas de forma ágil y segura. Transforma inspecciones complejas de papel a un flujo digital 100% auditable y preciso.",
+    img: require("./componentes/images/proyectos/fiabilidadUno.png"),
+    images: [
+      require("./componentes/images/proyectos/fiabilidadUno.png"),
+      process.env.PUBLIC_URL + "/videos/Fiabilidad.mp4", // <-- VIDEO: Guardado en public/videos/demo-siat.mp4
+      require("./componentes/images/proyectos/fiabilidadDos.png") 
+   
+    ],
+    tags: ["Kotlin", "Jetpack Compose", "Coroutines + Flow", "Clean Architecture", "JAVA"],
+    youtube: "https://www.youtube.com/watch?v=JwJsV3sdfkU&t=673s",
   },
   {
     title: "Travel La Paz",

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import AndroidIcon from "@mui/icons-material/Android";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import { projects } from "../../contentV2";
 
 // Función auxiliar para detectar si la ruta es un video
@@ -94,6 +96,24 @@ export default function ProjectsV2({ t }) {
 
   return (
     <section id="projects" className="v2-projects">
+
+
+      <div className="area" aria-hidden="true">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+   
+<div style={{ position: "relative", zIndex: 1 }}>
       <div className="v2-section-head">
         <h2>{t.projects.title}</h2>
         <span className="v2-rule" />
@@ -123,21 +143,39 @@ export default function ProjectsV2({ t }) {
                 ))}
               </div>
               
-              <div className="v2-project-actions">
+             <div className="v2-project-actions">
+                
+                {/* 1. Si tiene 'demo', muestra el botón web */}
                 {project.demo && (
                   <a className="v2-btn v2-btn-sm" href={project.demo} target="_blank" rel="noreferrer">
                     <OpenInNewIcon fontSize="small" /> {t.projects.demo}
                   </a>
                 )}
+
+                {/* 2. Si tiene 'google', muestra el botón de Google Play */}
+                {project.google && (
+                  <a className="v2-btn v2-btn-sm" href={project.google} target="_blank" rel="noreferrer">
+                    <AndroidIcon fontSize="small" /> {t.projects.google || "Google Play"}
+                  </a>
+                )}
+
+                {/* 3. Si tiene 'git', muestra el botón de GitHub */}
                 {project.git && (
                   <a className="v2-btn v2-btn-sm v2-btn-outline" href={project.git} target="_blank" rel="noreferrer">
                     <GitHubIcon fontSize="small" /> {t.projects.code}
                   </a>
                 )}
+                {project.youtube && (
+                  <a className="v2-btn v2-btn-sm" href={project.youtube} target="_blank" rel="noreferrer">
+                    <YouTubeIcon fontSize="small" /> {t.projects.youtube || "YouTube"}
+                  </a>
+                )}
+
               </div>
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
