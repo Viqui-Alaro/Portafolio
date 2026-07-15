@@ -614,3 +614,103 @@
     border-radius: 50%;
   }
 }
+
+/* =========================================================
+   PLAN B MEJORADO: DISEÑO PLANO MINIMALISTA (HOVER SUAVE)
+========================================================= */
+
+:root {
+  --fondo-puro: #ffffff; 
+  --fondo-tarjeta-flat: #f8fafc; 
+  --borde-sutil: #e2e8f0; 
+  --borde-hover: #cbd5e1; /* Gris plata suave para cuando acercas el mouse */
+  --texto-fuerte: #0f172a; 
+  --texto-suave: #475569;
+  --azul-tecnico: #2563eb; 
+  --azul-tecnico-hover: #1d4ed8;
+}
+
+/* 1. Fondo completamente blanco y limpio */
+.v2-about, 
+.v2-projects {
+  background-color: var(--fondo-puro) !important;
+  color: var(--texto-suave) !important;
+}
+
+/* 2. Títulos fuertes */
+.v2-section-head h2 {
+  color: var(--texto-fuerte) !important;
+}
+.v2-rule {
+  background-color: var(--borde-sutil) !important;
+  height: 2px !important;
+  box-shadow: none !important;
+}
+
+/* 3. Textos descriptivos */
+.v2-about-right p, 
+p.v2-project-desc {
+  color: var(--texto-suave) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.v2-skill-group h3,
+.v2-project-info h3 {
+  color: var(--texto-fuerte) !important;
+}
+
+/* 4. TARJETAS DE PROYECTOS (Corregido el hover) */
+.v2-project-card {
+  background-color: var(--fondo-tarjeta-flat) !important;
+  border: 1px solid var(--borde-sutil) !important;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: none !important; 
+  transition: all 0.3s ease;
+}
+.v2-project-card:hover {
+  border-color: var(--borde-hover) !important; /* Ahora es un gris plata en lugar de azul */
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05) !important; /* Sombrita ultra delicada */
+  transform: translateY(-2px); /* Se levanta un par de milímetros muy sutilmente */
+}
+
+/* 5. Etiquetas/Chips */
+.v2-chip {
+  background-color: transparent !important;
+  color: var(--texto-suave) !important;
+  border: 1px solid var(--borde-sutil) !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease;
+}
+.v2-chip:hover {
+  border-color: var(--azul-tecnico) !important;
+  color: var(--azul-tecnico) !important;
+  background-color: rgba(37, 99, 235, 0.05) !important;
+}
+
+/* 6. Botones Planos */
+.v2-project-actions .v2-btn,
+.v2-about-left .v2-btn {
+  background-color: var(--azul-tecnico) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease;
+}
+.v2-project-actions .v2-btn:hover,
+.v2-about-left .v2-btn:hover {
+  background-color: var(--azul-tecnico-hover) !important;
+}
+
+/* 7. Iconos */
+.v2-project-actions .v2-btn svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+.v2-badge svg {
+  color: var(--azul-tecnico) !important;
+}
