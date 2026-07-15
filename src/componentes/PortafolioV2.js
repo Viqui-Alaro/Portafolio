@@ -14,9 +14,11 @@ export default function PortafolioV2() {
   return (
     <div className="v2-root">
       <NavbarV2 lang={lang} setLang={setLang} t={t} />
-      <HeroV2 t={t} lang={lang} />
-      <AboutV2 t={t} lang={lang} />
-      <ProjectsV2 t={t} />
+      <main>
+        <HeroV2 t={t} lang={lang} />
+        <AboutV2 t={t} lang={lang} />
+        <ProjectsV2 t={t} />
+      </main>
       <Footer />
     </div>
   );

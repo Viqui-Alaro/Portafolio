@@ -27,7 +27,6 @@ const ProjectSlider = ({ images, singleImg, title }) => {
     const currentMedia = imgArray[currentIndex];
 
     // Solo usamos el temporizador si ES UNA IMAGEN (4 segundos)
-    // Si es un video, el cambio lo hará el evento "onEnded" de la etiqueta <video>
     if (!isVideo(currentMedia)) {
       timeoutId = setTimeout(() => {
         nextSlide();
@@ -50,13 +49,13 @@ const ProjectSlider = ({ images, singleImg, title }) => {
       {/* Renderizado condicional: Video o Imagen */}
       {isVid ? (
         <video
-          key={currentMedia} // La key fuerza el re-renderizado para que el autoPlay funcione al cambiar de slide
+          key={currentMedia} 
           src={currentMedia}
           className="v2-slide-media"
           autoPlay
-          muted // Obligatorio en navegadores modernos para el autoplay
+          muted 
           playsInline
-          onEnded={nextSlide} // Cuando el video termine, avanza automáticamente
+          onEnded={nextSlide} 
         />
       ) : (
         <img
@@ -97,85 +96,72 @@ export default function ProjectsV2({ t }) {
   return (
     <section id="projects" className="v2-projects">
 
-
       <div className="area" aria-hidden="true">
         <ul className="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li></li><li></li><li></li><li></li><li></li>
+          <li></li><li></li><li></li><li></li><li></li>
         </ul>
       </div>
-   
-<div style={{ position: "relative", zIndex: 1 }}>
-      <div className="v2-section-head">
-        <h2>{t.projects.title}</h2>
-        <span className="v2-rule" />
-      </div>
+    
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <div className="v2-section-head">
+          <h2>{t.projects.title}</h2>
+          <span className="v2-rule" />
+        </div>
 
-      <div className="v2-projects-list">
-        {projectsList.map((project, index) => (
-          <div key={index} className="v2-project-card">
-            
-            <div className="v2-project-img">
-              <ProjectSlider 
-                images={project.images} 
-                singleImg={project.img} 
-                title={project.title} 
-              />
-            </div>
-
-            <div className="v2-project-info">
-              <h3>{project.title}</h3>
-              <p className="v2-project-desc">{project.descripcion}</p>
+        <div className="v2-projects-list">
+          {projectsList.map((project, index) => (
+            <div key={index} className="v2-project-card">
               
-              <div className="v2-chips">
-                {project.tags.map((tag) => (
-                  <span className="v2-chip v2-chip-light" key={tag}>
-                    {tag}
-                  </span>
-                ))}
+              <div className="v2-project-img">
+                <ProjectSlider 
+                  images={project.images} 
+                  singleImg={project.img} 
+                  title={project.title} 
+                />
               </div>
-              
-             <div className="v2-project-actions">
+
+              <div className="v2-project-info">
+                <h3>{project.title}</h3>
                 
-                {/* 1. Si tiene 'demo', muestra el botón web */}
-                {project.demo && (
-                  <a className="v2-btn v2-btn-sm" href={project.demo} target="_blank" rel="noreferrer">
-                    <OpenInNewIcon fontSize="small" /> {t.projects.demo}
-                  </a>
-                )}
-
-                {/* 2. Si tiene 'google', muestra el botón de Google Play */}
-                {project.google && (
-                  <a className="v2-btn v2-btn-sm" href={project.google} target="_blank" rel="noreferrer">
-                    <AndroidIcon fontSize="small" /> {t.projects.google || "Google Play"}
-                  </a>
-                )}
-
-                {/* 3. Si tiene 'git', muestra el botón de GitHub */}
-                {project.git && (
-                  <a className="v2-btn v2-btn-sm v2-btn-outline" href={project.git} target="_blank" rel="noreferrer">
-                    <GitHubIcon fontSize="small" /> {t.projects.code}
-                  </a>
-                )}
-                {project.youtube && (
-                  <a className="v2-btn v2-btn-sm" href={project.youtube} target="_blank" rel="noreferrer">
-                    <YouTubeIcon fontSize="small" /> {t.projects.youtube || "YouTube"}
-                  </a>
-                )}
-
+                {/* --- ESTA ES LA LÍNEA MÁGICA REPARADA --- */}
+                {/* Ahora lee del diccionario usando el ID del proyecto */}
+                <p className="v2-project-desc">{t.projectDetails[project.id]}</p>
+                
+                <div className="v2-chips">
+                  {project.tags.map((tag) => (
+                    <span className="v2-chip v2-chip-light" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="v2-project-actions">
+                  {project.demo && (
+                    <a className="v2-btn v2-btn-sm" href={project.demo} target="_blank" rel="noreferrer">
+                      <OpenInNewIcon fontSize="small" /> {t.projects.demo}
+                    </a>
+                  )}
+                  {project.google && (
+                    <a className="v2-btn v2-btn-sm" href={project.google} target="_blank" rel="noreferrer">
+                      <AndroidIcon fontSize="small" /> {t.projects.google || "Google Play"}
+                    </a>
+                  )}
+                  {project.git && (
+                    <a className="v2-btn v2-btn-sm v2-btn-outline" href={project.git} target="_blank" rel="noreferrer">
+                      <GitHubIcon fontSize="small" /> {t.projects.code}
+                    </a>
+                  )}
+                  {project.youtube && (
+                    <a className="v2-btn v2-btn-sm" href={project.youtube} target="_blank" rel="noreferrer">
+                      <YouTubeIcon fontSize="small" /> {t.projects.youtube || "YouTube"}
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </section>
   );
