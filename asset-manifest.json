@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Portafolio/static/css/main.a8fcf4af.css",
+    "main.js": "/Portafolio/static/js/main.aceb66c7.js",
+    "static/js/787.ae0d8d37.chunk.js": "/Portafolio/static/js/787.ae0d8d37.chunk.js",
+    "static/media/siatUno.png": "/Portafolio/static/media/siatUno.b2c351b634d1c2767c02.png",
+    "static/media/CV_Viqui_Alaro_ES.pdf": "/Portafolio/static/media/CV_Viqui_Alaro_ES.6dfed7073f836e2c2be2.pdf",
+    "static/media/CV_Viqui_Alaro_EN.pdf": "/Portafolio/static/media/CV_Viqui_Alaro_EN.b14ae3022a9fed2c6fae.pdf",
+    "static/media/portafolio2.png": "/Portafolio/static/media/portafolio2.5a6bcb1233c6e31f28d4.png",
+    "static/media/portafolio3.png": "/Portafolio/static/media/portafolio3.3a1a5a0a6529c7b47398.png",
+    "static/media/portafolio1.png": "/Portafolio/static/media/portafolio1.f6d30a09b2cc7c7532d9.png",
+    "static/media/foto.png": "/Portafolio/static/media/foto.acad2e6541d9b61aa63c.png",
+    "static/media/farmaciaDos.png": "/Portafolio/static/media/farmaciaDos.76c1ea73ac59b358dfb0.png",
+    "static/media/fiabilidadDos.png": "/Portafolio/static/media/fiabilidadDos.8ef09c7fcc2ac6ad2c7e.png",
+    "static/media/siatTres.png": "/Portafolio/static/media/siatTres.7b9e5627ed365e5393f8.png",
+    "static/media/farmaciaTres.png": "/Portafolio/static/media/farmaciaTres.9bfd62513414906b9508.png",
+    "static/media/transporteUno.png": "/Portafolio/static/media/transporteUno.0b2f190880e1ce7564ed.png",
+    "static/media/fiabilidadUno.png": "/Portafolio/static/media/fiabilidadUno.9ac77ba6400f3a967dc6.png",
+    "static/media/transporteDos.png": "/Portafolio/static/media/transporteDos.e34283652ddd6c4e63b6.png",
+    "static/media/farmaciaUno.png": "/Portafolio/static/media/farmaciaUno.1f28eba4ad58c4790fed.png",
+    "static/media/siatCuatro.png": "/Portafolio/static/media/siatCuatro.e4d79ff8b957f89be72a.png",
+    "static/media/siatDos.png": "/Portafolio/static/media/siatDos.7ad881401cd9d24c4f53.png",
+    "index.html": "/Portafolio/index.html",
+    "main.a8fcf4af.css.map": "/Portafolio/static/css/main.a8fcf4af.css.map",
+    "main.aceb66c7.js.map": "/Portafolio/static/js/main.aceb66c7.js.map",
+    "787.ae0d8d37.chunk.js.map": "/Portafolio/static/js/787.ae0d8d37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8fcf4af.css",
+    "static/js/main.aceb66c7.js"
+  ]
+}
