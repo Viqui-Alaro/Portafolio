@@ -170,7 +170,7 @@ export const projects = [
     title: "Portafolio",
     img: require("./componentes/images/proyectos/portafolioDos.png"),
     tags: ["Bootstrap", "GitHub Pages","Angular","Lottie","CSS3","HTML5","TypeScrip"],
-    demo: "https://vicovillca.github.io/portafolio/",
+    demo: "https://viqui-alaro.github.io/Portafolio/",
     git: "https://github.com/Viqui-Alaro/Portafolio",
   },
   {
