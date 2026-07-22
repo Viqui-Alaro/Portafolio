@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.a8fcf4af.css",
-    "main.js": "/portafolio/static/js/main.cff43591.js",
-    "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
-    "static/media/siatUno.png": "/portafolio/static/media/siatUno.b2c351b634d1c2767c02.png",
-    "static/media/CV - ALARO MAMANI VIQUI MARIBEL.pdf": "/portafolio/static/media/CV - ALARO MAMANI VIQUI MARIBEL.cf6019a738c370d88dda.pdf",
-    "static/media/foto.png": "/portafolio/static/media/foto.acad2e6541d9b61aa63c.png",
-    "static/media/farmaciaDos.png": "/portafolio/static/media/farmaciaDos.76c1ea73ac59b358dfb0.png",
-    "static/media/fiabilidadDos.png": "/portafolio/static/media/fiabilidadDos.8ef09c7fcc2ac6ad2c7e.png",
-    "static/media/siatTres.png": "/portafolio/static/media/siatTres.7b9e5627ed365e5393f8.png",
-    "static/media/farmaciaTres.png": "/portafolio/static/media/farmaciaTres.9bfd62513414906b9508.png",
-    "static/media/transporteUno.png": "/portafolio/static/media/transporteUno.0b2f190880e1ce7564ed.png",
-    "static/media/fiabilidadUno.png": "/portafolio/static/media/fiabilidadUno.9ac77ba6400f3a967dc6.png",
-    "static/media/transporteDos.png": "/portafolio/static/media/transporteDos.e34283652ddd6c4e63b6.png",
-    "static/media/farmaciaUno.png": "/portafolio/static/media/farmaciaUno.1f28eba4ad58c4790fed.png",
-    "static/media/portafolioDos.png": "/portafolio/static/media/portafolioDos.be876a425e55b0fd9af0.png",
-    "static/media/siatCuatro.png": "/portafolio/static/media/siatCuatro.e4d79ff8b957f89be72a.png",
-    "static/media/siatDos.png": "/portafolio/static/media/siatDos.7ad881401cd9d24c4f53.png",
-    "index.html": "/portafolio/index.html",
-    "main.a8fcf4af.css.map": "/portafolio/static/css/main.a8fcf4af.css.map",
-    "main.cff43591.js.map": "/portafolio/static/js/main.cff43591.js.map",
-    "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
+    "main.css": "/Portafolio/static/css/main.a8fcf4af.css",
+    "main.js": "/Portafolio/static/js/main.ef924d37.js",
+    "static/js/787.ae0d8d37.chunk.js": "/Portafolio/static/js/787.ae0d8d37.chunk.js",
+    "static/media/siatUno.png": "/Portafolio/static/media/siatUno.b2c351b634d1c2767c02.png",
+    "static/media/CV - ALARO MAMANI VIQUI MARIBEL.pdf": "/Portafolio/static/media/CV - ALARO MAMANI VIQUI MARIBEL.cf6019a738c370d88dda.pdf",
+    "static/media/foto.png": "/Portafolio/static/media/foto.acad2e6541d9b61aa63c.png",
+    "static/media/farmaciaDos.png": "/Portafolio/static/media/farmaciaDos.76c1ea73ac59b358dfb0.png",
+    "static/media/fiabilidadDos.png": "/Portafolio/static/media/fiabilidadDos.8ef09c7fcc2ac6ad2c7e.png",
+    "static/media/siatTres.png": "/Portafolio/static/media/siatTres.7b9e5627ed365e5393f8.png",
+    "static/media/farmaciaTres.png": "/Portafolio/static/media/farmaciaTres.9bfd62513414906b9508.png",
+    "static/media/transporteUno.png": "/Portafolio/static/media/transporteUno.0b2f190880e1ce7564ed.png",
+    "static/media/fiabilidadUno.png": "/Portafolio/static/media/fiabilidadUno.9ac77ba6400f3a967dc6.png",
+    "static/media/transporteDos.png": "/Portafolio/static/media/transporteDos.e34283652ddd6c4e63b6.png",
+    "static/media/farmaciaUno.png": "/Portafolio/static/media/farmaciaUno.1f28eba4ad58c4790fed.png",
+    "static/media/portafolioDos.png": "/Portafolio/static/media/portafolioDos.be876a425e55b0fd9af0.png",
+    "static/media/siatCuatro.png": "/Portafolio/static/media/siatCuatro.e4d79ff8b957f89be72a.png",
+    "static/media/siatDos.png": "/Portafolio/static/media/siatDos.7ad881401cd9d24c4f53.png",
+    "index.html": "/Portafolio/index.html",
+    "main.a8fcf4af.css.map": "/Portafolio/static/css/main.a8fcf4af.css.map",
+    "main.ef924d37.js.map": "/Portafolio/static/js/main.ef924d37.js.map",
+    "787.ae0d8d37.chunk.js.map": "/Portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8fcf4af.css",
-    "static/js/main.cff43591.js"
+    "static/js/main.ef924d37.js"
   ]
 }
